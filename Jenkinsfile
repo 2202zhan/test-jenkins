@@ -15,7 +15,8 @@ pipeline {
         stage('Run') {
             steps {
                 echo 'Запускаем Python код...'
-                bat 'python main.py'
+                // Используем полный путь к python.exe
+                bat '"C:\\Python310\\python.exe" main.py'
             }
         }
     }
